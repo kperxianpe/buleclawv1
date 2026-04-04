@@ -1,0 +1,14 @@
+# Blueclaw v1.0 Requirements
+
+# Core
+asyncio>=3.4.3
+
+# Optional - for browser automation
+# playwright>=1.40.0
+
+# Optional - for LLM integration
+# openai>=1.0.0
+
+# Development
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
