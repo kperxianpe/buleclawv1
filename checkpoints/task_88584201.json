@@ -1,0 +1,19 @@
+{
+  "task": {
+    "id": "task_88584201",
+    "user_input": "Checkpoint test",
+    "status": "thinking",
+    "created_at": 1775494776.6221964,
+    "updated_at": 1775494776.6221964,
+    "thinking_path": [
+      {
+        "node_id": "thinking_69701718",
+        "question": "关于'Checkpoint test'，请选择:"
+      }
+    ],
+    "execution_blueprint": null,
+    "current_step_id": null
+  },
+  "saved_at": "2026-04-07T00:59:36.891355",
+  "version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "task": {
+    "id": "task_cdce34e6",
+    "user_input": "Msg 40",
+    "status": "created",
+    "created_at": 1775489691.650212,
+    "updated_at": 1775489691.650212,
+    "thinking_path": [],
+    "execution_blueprint": null,
+    "current_step_id": null
+  },
+  "saved_at": "2026-04-06T23:34:51.650212",
+  "version": 1
+}

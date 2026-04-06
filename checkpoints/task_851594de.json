@@ -1,0 +1,14 @@
+{
+  "task": {
+    "id": "task_851594de",
+    "user_input": "Create a Python API",
+    "status": "created",
+    "created_at": 1775494777.1760094,
+    "updated_at": 1775494777.1760094,
+    "thinking_path": [],
+    "execution_blueprint": null,
+    "current_step_id": null
+  },
+  "saved_at": "2026-04-07T00:59:37.427698",
+  "version": 1
+}

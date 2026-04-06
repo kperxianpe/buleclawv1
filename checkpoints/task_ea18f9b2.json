@@ -1,0 +1,14 @@
+{
+  "task": {
+    "id": "task_ea18f9b2",
+    "user_input": "Rapid 3",
+    "status": "created",
+    "created_at": 1775489689.7307484,
+    "updated_at": 1775489689.7307484,
+    "thinking_path": [],
+    "execution_blueprint": null,
+    "current_step_id": null
+  },
+  "saved_at": "2026-04-06T23:34:49.730748",
+  "version": 1
+}

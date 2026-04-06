@@ -1,0 +1,14 @@
+{
+  "task": {
+    "id": "task_08a00441",
+    "user_input": "Msg 50",
+    "status": "created",
+    "created_at": 1775489691.9595258,
+    "updated_at": 1775489691.9595258,
+    "thinking_path": [],
+    "execution_blueprint": null,
+    "current_step_id": null
+  },
+  "saved_at": "2026-04-06T23:34:51.959526",
+  "version": 1
+}

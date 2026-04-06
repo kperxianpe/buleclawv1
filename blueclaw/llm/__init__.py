@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""LLM integration module"""
+"""
+LLM Module - Unified client for OpenAI/Claude/Kimi
+"""
 
-from .kimi_client import KimiClient
+from .client import LLMClient, ModelProvider, Message, LLMResponse
+from . import prompts
 
-__all__ = ['KimiClient']
+__all__ = ['LLMClient', 'ModelProvider', 'Message', 'LLMResponse', 'prompts']
