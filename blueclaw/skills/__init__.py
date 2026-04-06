@@ -1,16 +1,62 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Blueclaw Skills - Core Capabilities"""
+"""
+Blueclaw Skills Module
 
-from .base_skill import BaseSkill, SkillResult, SkillParameter, PermissionLevel
-from .file_skill import FileSkill
-from .shell_skill import ShellSkill
-from .code_skill import CodeSkill
-from .search_skill import SearchSkill
-from .browser_skill import BrowserSkill
-from .skill_registry import SkillRegistry, get_registry
+15 domain-specific skills with OpenClaw-style architecture.
+Supports AI dynamic tool selection.
+"""
+
+# Base classes
+from .base import Skill, SkillResult
+
+# Registry and selector
+from .registry import SkillRegistry
+from .tool_selector import ToolSelector
+
+# Import all skills to register them
+# Filesystem
+from .filesystem.read import FileReadSkill
+from .filesystem.write import FileWriteSkill
+from .filesystem.list import FileListSkill
+from .filesystem.search import FileSearchSkill
+
+# Code
+from .code.analyze import CodeAnalyzeSkill
+from .code.execute import CodeExecuteSkill
+
+# Web
+from .web.fetch import WebFetchSkill
+from .web.search import WebSearchSkill
+
+# Data
+from .data.parse import DataParseSkill
+from .data.transform import DataTransformSkill
+
+# AI
+from .ai.summarize import AISummarizeSkill
+from .ai.translate import AITranslateSkill
+from .ai.describe_image import AIDescribeImageSkill
+
+# Document
+from .document.read import DocReadSkill
+from .document.write import DocWriteSkill
+
+# System
+from .system.shell import ShellExecuteSkill
+from .system.info import SystemInfoSkill
 
 __all__ = [
-    'BaseSkill', 'SkillResult', 'SkillParameter', 'PermissionLevel',
-    'FileSkill', 'ShellSkill', 'CodeSkill', 'SearchSkill', 'BrowserSkill',
-    'SkillRegistry', 'get_registry'
+    # Base
+    'Skill', 'SkillResult',
+    # Registry & Selector
+    'SkillRegistry', 'ToolSelector',
+    # Skills
+    'FileReadSkill', 'FileWriteSkill', 'FileListSkill', 'FileSearchSkill',
+    'CodeAnalyzeSkill', 'CodeExecuteSkill',
+    'WebFetchSkill', 'WebSearchSkill',
+    'DataParseSkill', 'DataTransformSkill',
+    'AISummarizeSkill', 'AITranslateSkill', 'AIDescribeImageSkill',
+    'DocReadSkill', 'DocWriteSkill',
+    'ShellExecuteSkill', 'SystemInfoSkill',
 ]

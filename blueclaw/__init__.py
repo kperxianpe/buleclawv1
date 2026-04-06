@@ -3,11 +3,6 @@
 Blueclaw v1.0 - AI Self-Operating Canvas Framework
 
 A modular blueprint engine with AI self-operation capabilities.
-
-Quick Start:
-    >>> from blueclaw import create_coordinator_v3
-    >>> coord = create_coordinator_v3(use_real_execution=True)
-    >>> await coord.start_task("List files in directory")
 """
 
 __version__ = "1.0.0"
@@ -22,14 +17,12 @@ from .core.execution_blueprint import (
     create_execution_blueprint_system
 )
 
-# Skills (OpenClaw integration)
+# Skills (Week 17 - OpenClaw style)
 from .skills import (
-    BaseSkill, SkillResult, SkillParameter, PermissionLevel,
-    SkillRegistry, get_registry,
-    FileSkill, ShellSkill, CodeSkill, SearchSkill, BrowserSkill
+    Skill, SkillResult, SkillRegistry, ToolSelector
 )
 
-# Memory (OpenClaw integration)
+# Memory
 from .memory import (
     MemoryManager, WorkingMemory, LongTermMemory
 )
@@ -48,9 +41,7 @@ __all__ = [
     "ExecutionBlueprintSystem", "ExecutionStep", "StepStatus",
     "create_execution_blueprint_system",
     # Skills
-    "BaseSkill", "SkillResult", "SkillParameter", "PermissionLevel",
-    "SkillRegistry", "get_registry",
-    "FileSkill", "ShellSkill", "CodeSkill", "SearchSkill", "BrowserSkill",
+    "Skill", "SkillResult", "SkillRegistry", "ToolSelector",
     # Memory
     "MemoryManager", "WorkingMemory", "LongTermMemory",
     # Integration
